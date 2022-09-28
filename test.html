@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- to be copied -->
+    <link rel="stylesheet" href="./components/test.css">
+     <!-- to be copied -->
+</head>
+<body>
+<div id="navbar"></div>
+<div id="nav"></div>
+<div id="footer"></div>
+</body>
+</html>
+<!-- to be copied -->
+<script type="module">
+    import footer from "./components/footer.js"
+      import navbar from "./components/navbar.js"
+      import navs from "./components/importnav.js"
+      document.querySelector("#navbar").innerHTML=navbar();
+      document.querySelector("#footer").innerHTML=footer();
+      navs().then((data)=>{
+        document.getElementById('nav').innerHTML = data
+      })
+      
+  </script>
+   <!-- to be copied -->
